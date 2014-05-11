@@ -1,0 +1,3 @@
+Digest
+
+Authorization: Digest username="pablo", realm="Restricted area", nonce="4b8b1138d11b5", uri="/recibe", response="2488dccae8c8cf605f67c0515150a485", opaque="cdce8a5c95a1427d74df7acbf41c9ce0", qop=auth, nc=00000009, cnonce="72152a6a94a252d8"

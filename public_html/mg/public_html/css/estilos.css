@@ -1,0 +1,758 @@
+* {
+margin:0;
+padding:0;
+}
+
+html, body {
+	/*height:100%;*/
+}
+
+body {
+	background-color:rgb(245,245,245);
+	color:#868489;
+	font-family: "Times New Roman", serif;
+}
+
+a {
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#767676;
+}
+
+a img {
+	border:none;
+}
+
+#menu a.activo, .activo a, a.activo {
+	text-decoration:line-through;
+	/*cursor:auto;*/
+}
+
+#menu .activo p a {
+text-decoration:none;
+}
+
+#contenedor {
+    max-width:1086px;
+    margin:0 auto;
+    padding: 0 10px 1em;
+}
+
+#contenedor_encabezado {
+	width:100%;
+}
+
+#encabezado {
+	border-bottom:2px solid #7A7A7A;
+	margin:0 auto;
+	max-width:1086px;
+	min-width:820px;
+	overflow:hidden;
+}
+
+h1#logo {
+	float:left;
+	margin:41px 44px;
+	overflow:hidden;
+}
+
+h1#logo a {
+	display:block;
+	background:url('/img/logo') no-repeat;
+	text-indent:-20000px;
+}
+
+h1#logo, h1#logo a {
+	width:85px;
+	height:137px;
+}
+
+#navegacion {
+	margin-top:28px;
+	float:right;
+	width:644px;
+}
+
+	#navegacion small {
+		text-transform:uppercase;
+		display:block;
+		text-align:right;
+		font-size:9px;
+		font-family:Georgia;
+		padding: 4px 0;
+	}
+
+#navegacion p.contacto {
+	text-align:right;
+	line-height:28px;
+	font-size:9px;
+	font-family:Georgia;
+	padding-right:3px;
+}
+
+#menu {
+	width:644px;
+	/*height:100px;*/
+	border-top:2px solid #6f6f6f;
+}
+
+#menu ul {
+list-style-type:none;
+}
+
+#menu li {
+padding:20px 0 0 6px;
+float:left;
+/* provisorio, hasta que vuelva diseño*/
+width:270px;
+}
+
+#menu li a {
+text-transform:uppercase;
+text-decoration:none;
+color:#767676;
+font:normal 31px Georgia, serif;
+
+}
+
+#menu li p {
+margin:6px 0;
+/*	line-height:200%;*/
+}
+
+#menu li p, #menu li p a {
+	font-style:italic;
+	font-size: 11px;
+	font-family: "Times New Roman";
+}
+
+#menu li p a {
+display:inline-block;
+
+	margin-bottom:8px;
+	white-space:nowrap;
+	font:italic 11px "Times New Roman", serif;
+}
+
+#menu li.estudio {
+/*
+provisorio, hasta que vuelva diseño
+width:210px;
+*/
+}
+
+#menu li.proyectos {
+/*
+provisorio, hasta que vuelva diseño
+width:279px;*/
+}
+
+#menu li.disenyo {
+/*
+provisorio, hasta que vuelva diseño
+width:137px;
+*/
+}
+
+#marquesina_cont {
+	display:inline-block;
+	position:relative;
+}
+#marquesina_cont .borde {
+	position: absolute;
+	top:2px;
+}
+#marquesina_izq {
+	left: 0;
+}
+#marquesina_der {
+	right: 0;
+}
+
+.marquesina {
+	cursor:move;
+	border-top:2px solid #6f6f6f;
+border-bottom:2px solid #6f6f6f;
+
+}
+
+.marquesina div {
+line-height:28px;
+}
+
+#indice, #indice li {
+display:inline;
+}
+#indice li {
+padding:4px;
+}
+
+#indice, #indice a {
+	font:normal 9px Georgia;
+	text-transform:uppercase;
+}
+
+#indice a span.titulo {
+	display:none;
+}
+
+
+#contenido {
+	height:auto;
+}
+
+#contenido div {
+	/*float:left;*/
+}
+
+div#nav {
+	clear:both;
+	float:none;
+	margin:10px auto;
+	max-width:1086px;
+}
+
+h2 {
+	background-color:#808080;
+	color:#FFFFFF;
+	display:inline;/*-block;*/
+	font-family:Georgia;
+	font-size:11px;
+	font-weight:normal;
+	margin-bottom:4px;
+	padding:2px 3px;
+	text-transform:uppercase;
+
+	/*
+	font-size:12px;
+	padding:3px 4px;
+	*/
+
+}
+
+
+#seccion {
+	width:100%;
+	height:auto;
+	overflow:visible;
+    /*
+    padding-bottom: 1em;
+    padding-left:10px;
+    padding-right:10px;
+    */
+}
+
+#seccion .wrapper {
+	padding-bottom:1em;
+	/*overflow:hidden;*/
+}
+
+
+
+
+div.ol {
+	position:absolute;
+	top:0;
+	left:0;
+	width:122px;
+	height:180px;
+	padding:0;
+}
+
+
+.home .wrapper {
+	height:500px;
+	margin:8px 2px 0;
+    position:relative;
+}
+
+.home .wrapper img {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0;
+		-moz-opacity:0;
+		filter:alpha(opacity=0);
+}
+
+.home .wrapper img.active {
+    z-index:10;
+    opacity:1;
+		-moz-opacity:1;
+		filter:alpha(opacity=100);
+}
+
+.home .wrapper img.last-active {
+    z-index:9;
+}
+
+
+/** Diseno ********************************************************************/
+
+.disenyo .wrapper div {
+	float: left;
+}
+
+.disenyo h3 {
+	font-size:42px;
+	line-height:87%;
+	color:#808080;
+	font-weight:normal;
+	padding:10px 0;
+}
+
+.disenyo .item h3 a {
+	padding-left: 0;
+	font-size:42px;
+}
+
+.disenyo .wrapper .item {
+	width:auto;
+}
+
+.disenyo .item div.descripcion {
+	width:270px;
+}
+
+.disenyo .item div.descripcion p {
+	text-align:justify;
+	margin-right:16px;
+	padding-left:0;
+}
+
+.disenyo span.anyo {
+	font-style:italic;
+	font-size:9px;
+	display:block;
+	margin-bottom:10px;
+}
+
+.disenyo div.imagenes {
+	margin-right:16px;
+}
+
+.disenyo div.imagenes img {
+	float:left;
+	margin-right:4px;
+}
+
+
+/** Contacto ******************************************************************/
+
+#imagen {
+	float:left;
+}
+
+.formulario {
+	float:left;
+	text-align:right;
+	width:322px;
+}
+
+.formulario address {
+	font-size:10px;
+	font-style:italic;
+	height:118px;
+	line-height:150%;
+	text-transform:uppercase;
+	white-space:pre;
+}
+
+
+#campos {
+	font-size:10px;
+}
+
+#campos p {
+	margin:8px 0;
+}
+#campos label {
+	font-style:italic;
+	text-transform: uppercase;
+
+	float:left;
+margin:4px 0.5em 0 0;
+text-align:right;
+width:7em;
+}
+
+#campos input, #campos textarea {
+	width:230px;
+}
+
+#campos textarea {
+	height:188px;
+}
+
+#ver_mapa {
+	padding:5px;
+}
+
+#ver_mapa a, #enviar {
+	background-color:#939598;
+	border:medium none;
+	color:#FFFFFF;
+	font-family:"Times New Roman";
+	font-size:12px;
+	font-style:italic;
+	padding:3px 7px;
+	text-transform:uppercase;
+}
+
+#map_canvas {
+
+	width:600px;
+	height:400px;
+}
+
+input.error, textarea.error {
+	background-color:#FFEEEE;
+}
+
+#aviso.error {
+color:#800000;
+}
+#aviso em {
+display:block;
+}
+
+
+/** Filosofia *****************************************************************/
+/*
+61 90
+708 660
+*/
+
+
+.filosofia {
+
+}
+/*
+.filosofia .wrapper {
+width:2250px;
+}
+*/
+.filosofia .wrapper div.item {
+	width:578px;
+}
+
+
+
+div.ol span {
+background:url('../img/ol') no-repeat;
+width:61px;
+height:90px;
+float:left;
+margin:8px 0;
+}
+
+
+.ol span.u0 {
+background-position:-61px 0;
+}
+
+.ol span.u1 {
+background-position:-61px -90px;
+}
+
+.ol span.u2 {
+background-position:-61px -180px;
+}
+
+.ol span.u3 {
+background-position:-61px -270px;
+}
+
+.ol span.u4 {
+background-position:-61px -360px;
+}
+
+.ol span.u5 {
+background-position:-61px -450px;
+}
+
+.ol span.u6 {
+background-position:-61px -540px;
+}
+
+.ol span.u7 {
+background-position:-61px -630px;
+}
+
+.ol span.u8 {
+background-position:-61px -720px;
+}
+
+.ol span.u9 {
+background-position:-61px -810px;
+}
+
+.ol span.d1 {
+background-position:-61px -90px;
+}
+
+.ol span.d2 {
+background-position:-61px -180px;
+}
+
+.ol span.d3 {
+background-position:-61px -270px;
+}
+
+.ol span.d4 {
+background-position:-61px -360px;
+}
+
+.ol span.d5 {
+background-position:-61px -450px;
+}
+
+.ol span.d6 {
+background-position:-61px -540px;
+}
+
+.ol span.d7 {
+background-position:-61px -630px;
+}
+
+.ol span.d8 {
+background-position:-61px -720px;
+}
+
+.ol span.d9 {
+background-position:-61px -810px;
+}
+
+
+.ol span.simb {
+width:122px;
+}
+
+.ol span.s1 {
+background-position:0px -900px;
+}
+
+.ol span.s2 {
+background-position:0px -990px;
+}
+
+.ol span.s3 {
+background-position:0px -1080px;
+}
+
+.item h3 a {
+	padding-left:122px;
+	display:block;
+	text-transform:none;
+	font-size:48px;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+
+
+
+/** Equipo ********************************************************************/
+
+/*
+.equipo .wrapper {
+width:2050px;
+}*/
+
+.equipo .wrapper>div {
+display:inline-block;
+}
+
+.equipo .descripcion {
+	width:325px;
+	padding-right: 48px;
+	float:left;
+}
+
+.equipo .wrapper .item {
+width:613px;
+}
+
+.equipo h3 {
+font-size:48px;
+width:60%;
+text-transform:uppercase;
+font-weight:normal;
+margin-bottom:10px;
+}
+
+
+/** Fotos estudio *************************************************************/
+
+.fotos_estudio img {
+	float:left;
+	margin-right:11px;
+}
+
+/** proyectos *******************************************************************/
+
+table {
+	border-collapse: collapse;
+    /*border-spacing: 15px;*/
+}
+
+td {
+	padding-right:11px;
+}
+
+div.item {
+	position:relative;
+	display:inline-block;
+	float:left;
+	padding:0 48px 0 0;
+}
+td.item {
+	padding:0 48px 0 0;
+}
+
+.itemInt {
+	position:relative;
+}
+
+div.item p {
+	font-size:15px;
+	padding-left:122px;
+}
+
+
+.proyectos .ampliacion {
+	display:inline-block;
+	float:left;
+
+	position:relative;
+}
+
+.proyectos .ampliacion h3 {
+	/*
+	display:block;
+	float:left;
+	height:100px;
+	overflow:hidden;
+	width:220px;
+	*/
+	font-size:42px;
+	font-weight:normal;
+	line-height:50px;
+	padding-left:122px;
+	text-transform:uppercase;
+    white-space: pre;
+}
+
+.proyectos .ampliacion .ubicacion {
+	/*clear:left;
+	float:left;*/
+	font-size:11px;
+	font-style:italic;
+	padding-left:122px;
+	text-transform:uppercase;
+	width:170px;
+}
+
+.proyectos .ampliacion .descripcion {
+	padding-right:41px;
+	position:absolute;
+	text-align:justify;
+	top:224px;
+}
+
+span.volver {
+	display:block;
+	font-size:13px;
+	padding-top:1em;
+}
+
+.proyectos .imagenes {
+	float:left;
+}
+.proyectos .imagenes img {
+	margin-right: 11px;
+}
+
+.proyectos .item {
+    /*max-width: 450px;*/
+    min-width: 396px;
+}
+
+.proyectos .item h3 a {
+	font-size:42px;
+	height:100px;
+	line-height:50px;
+	overflow:hidden;
+	white-space: pre;
+}
+
+.proyectos .item h3 a:hover {
+	overflow:visible;
+	z-index: 10;
+}
+
+.proyectos .item p {
+	font-size:11px;
+	font-style:italic;
+	left:0;
+	padding-left:0;
+	position:absolute;
+	top:216px;
+	width:122px;
+	white-space:pre-line;
+}
+
+.estrellas {
+	margin-left:122px;
+	margin-bottom:10px;
+	background:url('/img/estrellas') no-repeat;
+	height:17px;
+	display:block;
+	text-indent:-20000px;
+	overflow:hidden;
+	width:0px;
+}
+
+.estrellas.e1 {
+	width:20px;
+}
+
+.estrellas.e2 {
+	width:45px;
+}
+
+.estrellas.e3 {
+	width:69px;
+}
+
+.estrellas.e4 {
+	width:92px;
+}
+
+.estrellas.e5 {
+	width:113px;
+}
+
+.proyectos .item img {
+	margin-left:122px;
+}
+
+
+#tooltip {
+	background-color:#f7f7f7;
+	border:1px solid #868489;
+	font-weight:bold;
+	opacity:0.9;
+	padding:5px;
+	position:absolute;
+	white-space:nowrap;
+	z-index:3000;
+}
+
+#tooltip h3, #tooltip div {
+	color:#868489;
+	font:10px Georgia;
+	margin:0;
+	text-transform:uppercase;
+}
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns="http://bng5.net/cms/ns/v0#">
+  <rdf:Description rdf:about="http://admin.cms3.tls/v0/">
+    <titulo>Prueba CMS3</titulo>
+    <api-version>0.0.1</api-version>
+    <descripcion>http://admin.cms3.tls/v0/servicio.wsdl</descripcion>
+  </rdf:Description>
+</rdf:RDF>
